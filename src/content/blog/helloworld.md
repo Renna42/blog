@@ -1,9 +1,8 @@
 ---
 title: Hello World
-pubDatetime: 2022-09-21T05:17:19Z
+pubDatetime: 2024-01-11T16:00:00+08:00
 slug: hello-world
-featured: true
-draft: false
+featured: false
 description: print("Hello World")
 ---
 
