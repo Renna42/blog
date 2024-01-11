@@ -17,7 +17,13 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
-    compress(),
+    compress({
+      HTML: {
+        "html-minifier-terser": {
+          collapseWhitespace: false,
+        },
+      },
+    }),
   ],
   markdown: {
     remarkPlugins: [
