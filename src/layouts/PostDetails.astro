@@ -23,6 +23,7 @@ const {
   pubDatetime,
   modDatetime,
   tags,
+  comment,
 } = post.data;
 
 const { Content } = await post.render();
@@ -75,7 +76,11 @@ const layoutProps = {
       {tags.map(tag => <Tag tag={slugifyStr(tag)} />)}
     </ul>
 
-    <Comments />
+    {
+      comment && (
+        <Comments />
+      )
+    }
   </main>
   <Footer />
 </Layout>
