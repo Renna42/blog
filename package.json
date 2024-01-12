@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "new-blog",
   "version": "4.1.0",
   "scripts": {
     "dev": "astro dev",
@@ -17,6 +17,7 @@
   "dependencies": {
     "@astrojs/check": "^0.4.1",
     "@astrojs/rss": "^4.0.1",
+    "@astrojs/vercel": "^6.1.4",
     "@resvg/resvg-js": "^2.6.0",
     "astro": "^4.1.1",
     "astro-compress": "^2.2.7",
