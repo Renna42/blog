@@ -7,8 +7,6 @@ import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
 import compress from "astro-compress";
 
-import vercel from "@astrojs/vercel/static";
-
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
@@ -46,6 +44,8 @@ export default defineConfig({
       exclude: ["@resvg/resvg-js"],
     },
   },
+  experimental: {
+    contentCollectionCache: true,
+  },
   scopedStyleStrategy: "where",
-  adapter: vercel(),
 });
