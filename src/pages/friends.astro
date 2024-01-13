@@ -1,0 +1,46 @@
+---
+import { SITE, FRIENDS } from "@config";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Layout from "@layouts/Layout.astro";
+import Comments from "@components/Comments.astro";
+import Socials from "@components/Socials.astro";
+---
+
+<Layout title={`友情链接 - ${SITE.title}`}>
+  <Header activeNav="friends" />
+  <Breadcrumbs />
+  <main id="main-content">
+    <section id="about" class="prose mb-28 max-w-3xl prose-img:border-0">
+      <h1 class="text-2xl tracking-wider sm:text-3xl">友情链接</h1>
+      <div class="grid grid-cols-2 gap-4">
+        {
+          FRIENDS.filter(friend => friend.active).map(friend => (
+          <div class="relative px-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 w-full sm:py-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+            <img class="block mx-auto h-28 rounded-lg !mt-6 mb-3 sm:mx-0 sm:shrink-0" src={friend.iconUrl} alt={friend.name} />
+            <div class="text-center space-y-2 sm:text-left">
+              <div class="absolute top-8 space-y-0.5">
+                <a href={friend.link} target="_blank" class="!text-skin-accent no-underline hover:underline text-lg font-bold my-0">
+                  {friend.name}
+                </a>
+                <p class="font-normal text-sm">
+                  {friend.description}
+                </p>
+              </div>
+              <div class="absolute !my-0 bottom-4">
+                <Socials socials={friend.socials} />
+              </div>
+            </div>
+          </div>
+          ))
+        }
+      </div>
+      <p class="!text-black">
+        欢迎交换友链喵~
+      </p>
+    </section>
+    <Comments />
+  </main>
+  <Footer />
+</Layout>

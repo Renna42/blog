@@ -4,7 +4,7 @@ import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
 export interface Props {
-  activeNav?: "posts" | "tags" | "about" | "search";
+  activeNav?: "posts" | "tags" | "friends" | "about" | "search";
 }
 
 const { activeNav } = Astro.props;
@@ -31,7 +31,7 @@ const { activeNav } = Astro.props;
       <nav id="nav-menu">
         <button
           class="hamburger-menu focus-outline"
-          aria-label="Open Menu"
+          aria-label="打开菜单"
           aria-expanded="false"
           aria-controls="menu-items"
         >
@@ -63,6 +63,11 @@ const { activeNav } = Astro.props;
           <li>
             <a href="/tags" class={activeNav === "tags" ? "active" : ""}>
               标签
+            </a>
+          </li>
+          <li>
+            <a href="/friends" class={activeNav === "friends" ? "active" : ""}>
+              友情链接
             </a>
           </li>
           <li>

@@ -16,3 +16,12 @@ export type SocialObjects = {
   active: boolean;
   linkTitle: string;
 }[];
+
+export type FriendObjects = {
+  name: string;
+  description: string;
+  iconUrl: string;
+  socials: SocialObjects;
+  link: string;
+  active: boolean;
+}[];

@@ -2,17 +2,22 @@
 import { SOCIALS } from "@config";
 import LinkButton from "./LinkButton.astro";
 import socialIcons from "@assets/socialIcons";
+import type { SocialObjects } from "types";
 
 export interface Props {
   centered?: boolean;
+  socials?: SocialObjects;
 }
 
-const { centered = false } = Astro.props;
+const {
+  centered = false,
+  socials = SOCIALS,
+} = Astro.props;
 ---
 
 <div class={`social-icons ${centered ? "flex" : ""}`}>
   {
-    SOCIALS.filter(social => social.active).map(social => (
+    socials.filter(social => social.active).map(social => (
       <LinkButton
         href={social.href}
         className="link-button"
