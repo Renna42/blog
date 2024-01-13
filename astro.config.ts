@@ -50,5 +50,7 @@ export default defineConfig({
     contentCollectionCache: true,
   },
   scopedStyleStrategy: "where",
-  adapter: vercel(),
+  adapter: vercel({
+    imageService: true,
+  }),
 });
