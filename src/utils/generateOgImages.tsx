@@ -17,10 +17,23 @@ const fetchFonts = async () => {
   );
   const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
 
-  return { fontRegular, fontBold };
+  // Regular CJK Font
+  const fontFileCjkRegular = await fetch(
+    "https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-sans/OTF/SimplifiedChinese/SourceHanSansSC-Normal.otf"
+  );
+  const fontCjkRegular = await fontFileCjkRegular.arrayBuffer();
+
+  // Bold CJK Font
+  const fontFileCjkBold = await fetch(
+    "https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-sans/OTF/SimplifiedChinese/SourceHanSansSC-Bold.otf"
+  );
+  const fontCjkBold = await fontFileCjkBold.arrayBuffer();
+
+  return { fontRegular, fontBold, fontCjkRegular, fontCjkBold };
 };
 
-const { fontRegular, fontBold } = await fetchFonts();
+const { fontRegular, fontBold, fontCjkRegular, fontCjkBold } =
+  await fetchFonts();
 
 const options: SatoriOptions = {
   width: 1200,
@@ -36,6 +49,18 @@ const options: SatoriOptions = {
     {
       name: "IBM Plex Mono",
       data: fontBold,
+      weight: 600,
+      style: "normal",
+    },
+    {
+      name: "Source Han Sans SC",
+      data: fontCjkRegular,
+      weight: 400,
+      style: "normal",
+    },
+    {
+      name: "Source Han Sans SC",
+      data: fontCjkBold,
       weight: 600,
       style: "normal",
     },

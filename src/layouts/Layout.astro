@@ -41,14 +41,9 @@ const socialImageURL = new URL(
 <!doctype html>
 <html
   lang=`${LOCALE.lang ?? "en"}`
-  class={`${scrollSmooth && "scroll-smooth"}`}
-  style={`${GRAY_MODE && "filter: grayscale(1)"}`}
+  class={`${scrollSmooth && "scroll-smooth"} ${GRAY_MODE && "grayscale"}`}
 >
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-
     <SEO
       title={title}
       description={description}
@@ -100,6 +95,9 @@ const socialImageURL = new URL(
         ]
       }}
     />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-53YE76JBT2"></script>
