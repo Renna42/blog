@@ -7,7 +7,7 @@ import Tag from "@components/Tag.astro";
 import Datetime from "@components/Datetime";
 import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
-import Comments from "@components/Comments.astro"
+import Comments from "@components/Comments.astro";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -78,11 +78,7 @@ const layoutProps = {
       {tags.map(tag => <Tag tag={slugifyStr(tag)} />)}
     </ul>
 
-    {
-      comment && (
-        <Comments />
-      )
-    }
+    {comment && <Comments />}
   </main>
   <Footer />
 </Layout>

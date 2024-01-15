@@ -11,7 +11,6 @@ import getSortedPosts from "@utils/getSortedPosts";
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 ---
 
 <Layout>
@@ -36,49 +35,25 @@ const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
         <span class="sr-only">RSS 订阅</span>
       </a>
 
-      <p>
-        想变成可爱猫娘但只会写 bug
-      </p>
+      <p>想变成可爱猫娘但只会写 bug</p>
     </section>
 
     <Hr />
-
-    {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured">
-            <h2>推荐</h2>
-            <ul>
-              {featuredPosts.map(({ data, slug }) => (
-                <Card
-                  href={`/posts/${slug}`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
-          </section>
-          <Hr />
-        </>
-      )
-    }
 
     <section id="recent-posts">
       <h2>最新文章</h2>
       <ul>
         {
-          sortedPosts
-            .filter(({ data }) => !data.featured)
-            .map(
-              ({ data, slug }, index) =>
-                index < 4 && (
-                  <Card
-                    href={`/posts/${slug}`}
-                    frontmatter={data}
-                    secHeading={false}
-                  />
-                )
-            )
+          sortedPosts.map(
+            ({ data, slug }, index) =>
+              index < 4 && (
+                <Card
+                  href={`/posts/${slug}`}
+                  frontmatter={data}
+                  secHeading={false}
+                />
+              )
+          )
         }
       </ul>
       <div class="all-posts-btn-wrapper">
@@ -121,12 +96,10 @@ const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
     @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
   }
 
-  /* ===== Featured & Recent Posts Sections ===== */
-  #featured,
+  /* ===== Recent Posts Sections ===== */
   #recent-posts {
     @apply pb-6 pt-12;
   }
-  #featured h2,
   #recent-posts h2 {
     @apply text-2xl font-semibold tracking-wide;
   }

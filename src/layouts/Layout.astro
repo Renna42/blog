@@ -44,7 +44,7 @@ const socialImageURL = new URL(
   class={`${scrollSmooth && "scroll-smooth"} ${GRAY_MODE && "grayscale"}`}
 >
   <head>
-    <meta charset="UTF-8" /> 
+    <meta charset="UTF-8" />
     <SEO
       title={title}
       description={description}
@@ -58,15 +58,18 @@ const socialImageURL = new URL(
         },
         optional: {
           locale: "zh_CN",
-          siteName: title
+          siteName: title,
         },
-        article: isPost ? {
-          publishedTime: pubDatetime && pubDatetime.toISOString(),
-          modifiedTime: modDatetime ? modDatetime.toISOString() : undefined,
-          authors: [author],
-          tags: postTags,
-        } : undefined
-      }},
+        article: isPost
+          ? {
+              publishedTime: pubDatetime && pubDatetime.toISOString(),
+              modifiedTime: modDatetime ? modDatetime.toISOString() : undefined,
+              authors: [author],
+              tags: postTags,
+            }
+          : undefined,
+      }}
+      ,
       twitter={{
         card: "summary_large_image",
         site: "@HMur233",
@@ -74,25 +77,26 @@ const socialImageURL = new URL(
         title: title,
         image: socialImageURL,
         imageAlt: title,
-        description: description
-      }},
+        description: description,
+      }}
+      ,
       extend={{
         link: [
           {
             rel: "icon",
-            href: "/favicon.ico"
+            href: "/favicon.ico",
           },
           {
             rel: "sitemap",
-            href: "/sitemap-index.xml"
-          }
+            href: "/sitemap-index.xml",
+          },
         ],
         meta: [
           {
             name: "author",
-            content: author
-          }
-        ]
+            content: author,
+          },
+        ],
       }}
     />
 
@@ -100,13 +104,16 @@ const socialImageURL = new URL(
     <meta name="generator" content={Astro.generator} />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-53YE76JBT2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-53YE76JBT2"
+    ></script>
     <script lang="javascript">
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-53YE76JBT2');
+      gtag("config", "G-53YE76JBT2");
     </script>
 
     <!-- Google Font -->
@@ -142,7 +149,10 @@ const socialImageURL = new URL(
   <body>
     <slot />
     <!-- Cloudflare Web Analytics -->
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9f927902e0c8496aa31d496112bd7c3c"}'></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "9f927902e0c8496aa31d496112bd7c3c"}'></script>
     <!-- End Cloudflare Web Analytics -->
   </body>
 </html>

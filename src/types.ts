@@ -10,18 +10,18 @@ export type Site = {
   postPerPage: number;
 };
 
-export type SocialObjects = {
+export type SocialObject = {
   name: keyof typeof socialIcons;
   href: string;
   active: boolean;
   linkTitle: string;
-}[];
+};
 
-export type FriendObjects = {
+export type FriendObject = {
   name: string;
   description: string;
   icon_file: string;
-  socials: SocialObjects;
+  socials?: SocialObject[];
   link: string;
   active: boolean;
-}[];
+};

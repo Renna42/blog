@@ -2,7 +2,6 @@
 title: TeamCity 魔法
 pubDatetime: 2024-01-11T16:12:00+08:00
 slug: teamcity-magic
-featured: true
 tags:
   - teamcity
 description: 一串神秘的字符

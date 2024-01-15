@@ -1,8 +1,7 @@
 ---
 title: 运行时修改 giscus 主题
-pubDatetime: 2024-01-12T14:24:30+08:00
+pubDatetime: 2024-01-16T03:10:00+08:00
 slug: change-giscus-theme-at-runtime
-featured: true
 tags:
   - giscus
 description: 在不重新加载整个 giscus 的 iframe 的情况下修改主题

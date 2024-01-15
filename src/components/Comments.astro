@@ -3,8 +3,8 @@
 </div>
 
 <script lang="javascript">
-  (function (){
-    const element = document.createElement("script")
+  (function () {
+    const element = document.createElement("script");
     const config = {
       src: "https://giscus.app/client.js",
       "data-repo": "HuajiMUR233/blog-discussions",
@@ -20,11 +20,11 @@
       "data-lang": "zh-CN",
       "data-loading": "lazy",
       crossorigin: "anonymous",
-      async: true
-    }
+      async: true,
+    };
     for (let key in config) {
-      element.setAttribute(key, config[key])
+      element.setAttribute(key, config[key]);
     }
-    document.getElementById("giscus-wrap")?.appendChild(element)
+    document.getElementById("giscus-wrap")?.appendChild(element);
   })();
 </script>

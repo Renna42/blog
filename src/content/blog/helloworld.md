@@ -2,7 +2,6 @@
 title: Hello World
 pubDatetime: 2024-01-11T16:00:00+08:00
 slug: hello-world
-featured: false
 description: print("Hello World")
 comment: false
 ---

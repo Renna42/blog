@@ -5,7 +5,7 @@ import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Layout from "@layouts/Layout.astro";
 import Comments from "@components/Comments.astro";
-import Socials from "@components/Socials.astro";
+import FriendCard from "@components/FriendCard.astro";
 ---
 
 <Layout title={`友情链接 - ${SITE.title}`}>
@@ -17,37 +17,20 @@ import Socials from "@components/Socials.astro";
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {
           FRIENDS.filter(friend => friend.active).map(friend => (
-          <div class="relative px-6 max-w-sm mx-auto rounded-xl shadow-lg friend-card-bg-color space-y-2 flex w-full sm:py-2 sm:items-center sm:space-y-0 sm:space-x-6">
-            <img class="block ml-0 mr-6 h-28 rounded-lg !mt-6 mb-3 sm:mx-0 sm:shrink-0" src={new URL("/assets/friends/" + friend.icon_file, Astro.url.origin).href} alt={friend.name} />
-            <div class="text-left space-y-2">
-              <div class="absolute top-8 space-y-0.5 mr-4">
-                <a href={friend.link} target="_blank" class="!text-skin-accent no-underline hover:underline text-lg font-bold my-0">
-                  {friend.name}
-                </a>
-                <p class="font-normal text-sm">
-                  {friend.description}
-                </p>
-              </div>
-              <div class="absolute !my-0 bottom-4">
-                <Socials socials={friend.socials} />
-              </div>
-            </div>
-          </div>
+            <FriendCard friend={friend} />
           ))
         }
       </div>
+      <p>欢迎交换友链喵~</p>
       <p>
-        欢迎交换友链喵~
+        站名: Code & Tea<br />
+        介绍: Neko’s bug log<br />
+        链接: {SITE.website}<br />
+        图标: {new URL("avatar.png", SITE.website).href}<br />
       </p>
       <p>
-        站名: Code & Tea<br>
-        介绍: Neko’s bug log<br>
-        链接: {SITE.website}<br>
-        图标: {new URL("avatar.png", SITE.website).href}<br>
-      </p>
-      <p>
-        如果你想在此添加友链, 你可以通过任意社交方式或在下方评论区告诉我<br>
-        但有几点要求要注意一下:<br>
+        如果你想在此添加友链, 你可以通过任意社交方式或在下方评论区告诉我<br />
+        但有几点要求要注意一下:<br />
         <ol>
           <li>需要网站启用了 HTTPS 访问</li>
           <li>原则上不接受存在商业性质的广告的网站</li>
@@ -63,10 +46,10 @@ import Socials from "@components/Socials.astro";
 
 <style>
   html[data-theme="light"] .friend-card-bg-color {
-    @apply bg-white
+    @apply bg-white;
   }
 
   html[data-theme="dark"] .friend-card-bg-color {
-    @apply bg-gray-700
+    @apply bg-gray-700;
   }
 </style>

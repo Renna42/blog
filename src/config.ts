@@ -1,4 +1,4 @@
-import type { Site, SocialObjects, FriendObjects } from "./types";
+import type { Site, SocialObject, FriendObject } from "./types";
 
 export const SITE: Site = {
   website: "https://blog.jvav.me/", // replace this with your deployed domain
@@ -22,7 +22,7 @@ export const LOGO_IMAGE = {
   height: 46,
 };
 
-export const SOCIALS: SocialObjects = [
+export const SOCIALS: SocialObject[] = [
   {
     name: "Twitter",
     href: "https://twitter.com/HMur233",
@@ -43,7 +43,7 @@ export const SOCIALS: SocialObjects = [
   },
 ];
 
-export const FRIENDS: FriendObjects = [
+export const FRIENDS: FriendObject[] = [
   {
     name: "阿龙的笔记",
     description: "阿巴阿巴…",
