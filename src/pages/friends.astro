@@ -17,10 +17,10 @@ import Socials from "@components/Socials.astro";
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {
           FRIENDS.filter(friend => friend.active).map(friend => (
-          <div class="relative px-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 flex w-full sm:py-2 sm:items-center sm:space-y-0 sm:space-x-6">
+          <div class="relative px-6 max-w-sm mx-auto rounded-xl shadow-lg friend-card-bg-color space-y-2 flex w-full sm:py-2 sm:items-center sm:space-y-0 sm:space-x-6">
             <img class="block ml-0 mr-6 h-28 rounded-lg !mt-6 mb-3 sm:mx-0 sm:shrink-0" src={new URL("/assets/friends/" + friend.icon_file, Astro.url.origin).href} alt={friend.name} />
             <div class="text-left space-y-2">
-              <div class="absolute top-8 space-y-0.5">
+              <div class="absolute top-8 space-y-0.5 mr-4">
                 <a href={friend.link} target="_blank" class="!text-skin-accent no-underline hover:underline text-lg font-bold my-0">
                   {friend.name}
                 </a>
@@ -36,11 +36,37 @@ import Socials from "@components/Socials.astro";
           ))
         }
       </div>
-      <p class="!text-black">
+      <p>
         欢迎交换友链喵~
+      </p>
+      <p>
+        站名: Code & Tea<br>
+        介绍: Neko’s bug log<br>
+        链接: {SITE.website}<br>
+        图标: {new URL("avatar.png", SITE.website).href}<br>
+      </p>
+      <p>
+        如果你想在此添加友链, 你可以通过任意社交方式或在下方评论区告诉我<br>
+        但有几点要求要注意一下:<br>
+        <ol>
+          <li>需要网站启用了 HTTPS 访问</li>
+          <li>原则上不接受存在商业性质的广告的网站</li>
+          <li>原则上不接受没什么内容/内容质量过低的网站</li>
+          <li><s>看我心情</s></li>
+        </ol>
       </p>
     </section>
     <Comments />
   </main>
   <Footer />
 </Layout>
+
+<style>
+  html[data-theme="light"] .friend-card-bg-color {
+    @apply bg-white
+  }
+
+  html[data-theme="dark"] .friend-card-bg-color {
+    @apply bg-gray-700
+  }
+</style>

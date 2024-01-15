@@ -1,14 +1,9 @@
-const primaryColorScheme = ""; // "light" | "dark"
-
 // Get theme data from local storage
 const currentTheme = localStorage.getItem("theme");
 
 function getPreferTheme() {
   // return theme value in local storage if it is set
   if (currentTheme) return currentTheme;
-
-  // return primary color scheme if it is set
-  if (primaryColorScheme) return primaryColorScheme;
 
   // return user device's prefer color scheme
   return window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -17,6 +12,10 @@ function getPreferTheme() {
 }
 
 let themeValue = getPreferTheme();
+
+function getGiscusTheme() {
+  return themeValue === "dark" ? "dark_dimmed" : "light";
+}
 
 function setPreference() {
   localStorage.setItem("theme", themeValue);
@@ -43,6 +42,19 @@ function reflectPreference() {
     document
       .querySelector("meta[name='theme-color']")
       ?.setAttribute("content", bgColor);
+
+    document.querySelectorAll("iframe.giscus-frame")?.forEach(frame => {
+      frame.contentWindow.postMessage(
+        {
+          giscus: {
+            setConfig: {
+              theme: getGiscusTheme(),
+            },
+          },
+        },
+        "https://giscus.app"
+      );
+    });
   }
 }
 

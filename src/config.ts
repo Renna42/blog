@@ -78,12 +78,33 @@ export const FRIENDS: FriendObjects = [
     socials: [
       {
         name: "Twitter",
-        href: "",
+        href: "https://twitter.com/xynmolly",
         linkTitle: "Twitter",
         active: true,
       },
     ],
     link: "https://cwcu.com.cn",
+    active: true,
+  },
+  {
+    name: "Empty SEKAI",
+    description: "一只游荡在无人 SEKAI 的小白葱",
+    icon_file: "prprnya.jpg",
+    socials: [
+      {
+        name: "Github",
+        href: "https://github.com/prprnya",
+        linkTitle: "GitHub",
+        active: true,
+      },
+      {
+        name: "Mastodon",
+        href: "https://nightcord.de/@miku",
+        linkTitle: "Mastodon",
+        active: true,
+      },
+    ],
+    link: "https://prpr.rip",
     active: true,
   },
 ];
