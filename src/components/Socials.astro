@@ -15,7 +15,7 @@ const { centered = false, socials = SOCIALS } = Astro.props;
 <div class={`social-icons ${centered ? "flex" : ""}`}>
   {
     socials
-      .filter(social => social.active)
+      .filter(social => social.active == undefined || social.active)
       .map(social => (
         <LinkButton
           href={social.href}

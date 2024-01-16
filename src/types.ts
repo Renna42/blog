@@ -13,8 +13,8 @@ export type Site = {
 export type SocialObject = {
   name: keyof typeof socialIcons;
   href: string;
-  active: boolean;
   linkTitle: string;
+  active?: boolean;
 };
 
 export type FriendObject = {
@@ -23,5 +23,5 @@ export type FriendObject = {
   icon_file: string;
   socials?: SocialObject[];
   link: string;
-  active: boolean;
+  active?: boolean;
 };

@@ -27,19 +27,16 @@ export const SOCIALS: SocialObject[] = [
     name: "Twitter",
     href: "https://twitter.com/HMur233",
     linkTitle: "Twitter",
-    active: true,
   },
   {
     name: "Github",
     href: "https://github.com/HuajiMUR233",
     linkTitle: "GitHub",
-    active: true,
   },
   {
     name: "Mail",
     href: "mailto:neko@jvav.me",
     linkTitle: "电子邮件",
-    active: true,
   },
 ];
 
@@ -53,23 +50,19 @@ export const FRIENDS: FriendObject[] = [
         name: "Github",
         href: "https://github.com/alongw",
         linkTitle: "GitHub",
-        active: true,
       },
       {
         name: "Telegram",
         href: "https://t.me/alongw",
         linkTitle: "Telegram",
-        active: true,
       },
       {
         name: "Mail",
         href: "mailto:alongw@alongw.cn",
         linkTitle: "电子邮件",
-        active: true,
       },
     ],
     link: "https://www.alongw.cn/",
-    active: true,
   },
   {
     name: "陌漓的小窝",
@@ -80,11 +73,9 @@ export const FRIENDS: FriendObject[] = [
         name: "Twitter",
         href: "https://twitter.com/xynmolly",
         linkTitle: "Twitter",
-        active: true,
       },
     ],
     link: "https://cwcu.com.cn",
-    active: true,
   },
   {
     name: "Empty SEKAI",
@@ -95,17 +86,14 @@ export const FRIENDS: FriendObject[] = [
         name: "Github",
         href: "https://github.com/prprnya",
         linkTitle: "GitHub",
-        active: true,
       },
       {
         name: "Mastodon",
         href: "https://nightcord.de/@miku",
         linkTitle: "Mastodon",
-        active: true,
       },
     ],
     link: "https://prpr.rip",
-    active: true,
   },
 ];
 
