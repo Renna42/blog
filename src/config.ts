@@ -7,7 +7,7 @@ export const SITE: Site = {
   title: "Code & Tea",
   ogImage: "og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 5,
 };
 
 export const LOCALE = {
