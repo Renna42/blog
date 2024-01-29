@@ -31,17 +31,17 @@ if (typeof friend == "string") {
       <a
         href={friendObject.link}
         target="_blank"
-        class="my-0 text-lg font-bold !text-skin-accent no-underline hover:underline"
+        class="my-0 text-sm font-bold !text-skin-accent no-underline hover:underline sm:text-lg"
       >
         {friendObject.name}
       </a>
-      <p class="text-sm font-normal">
+      <p class="text-xs font-normal sm:text-sm">
         {friendObject.description}
       </p>
     </div>
     {
       friendObject.socials && (
-        <div class="absolute bottom-4 !my-0">
+        <div class="absolute bottom-2 !my-0 sm:bottom-4">
           <Socials socials={friendObject.socials} />
         </div>
       )
