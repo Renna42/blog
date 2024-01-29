@@ -1,32 +1,3 @@
----
-layout: ../layouts/AboutLayout.astro
-title: "关于"
----
-
-## 我是谁
-
-- 一个 ADHD
-- 一个 MtF (HRT 2023.10.27)
-- 一个写 bug 的菜稽
-
-## 会什么
-
-- 写垃圾 bug
-- 睡大觉
-
-## 我的一些信息
-
-### OpenPGP
-
-指纹:
-
-```
-EB96A622B551964B3F6E9F7B7DAE108B0C351D44
-```
-
-公钥:
-
-```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 mDMEZbegcRYJKwYBBAHaRw8BAQdAqsfKFF1/7dG8wf/hJKx32kNOac6AKW7jEH5X
 Mx/CYN+0FU5la29vbyA8bmVrb0BqdmF2Lm1lPoicBBMWCgBEAhsjBQkFpG5PBQsJ
@@ -43,4 +14,3 @@ CRB9rhCLDDUdRIR8AQDwI9u8ntYxGWt37gMQ44BmKbf/yiRN60iPFmG7JOmVzQD/
 V6s2RAk541LQdjKveQ3geCKhPwap9US5y6Y6c4UJXgs=
 =KuAj
 -----END PGP PUBLIC KEY BLOCK-----
-```

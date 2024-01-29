@@ -3,6 +3,8 @@ import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
+import remarkEmoji from "remark-emoji";
+import remarkA11yEmoji from "@fec/remark-a11y-emoji";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
 import compress from "astro-compress";
@@ -33,9 +35,16 @@ export default defineConfig({
       [
         remarkCollapse,
         {
-          test: "Table of contents",
+          test: "目录",
         },
       ],
+      [
+        remarkEmoji,
+        {
+          accessible: true,
+        },
+      ],
+      remarkA11yEmoji,
     ],
     shikiConfig: {
       theme: "one-dark-pro",
