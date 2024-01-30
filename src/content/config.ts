@@ -20,6 +20,7 @@ const blog = defineCollection({
       description: z.string(),
       canonicalURL: z.string().optional(),
       comment: z.boolean().default(true),
+      license: z.string().default("ARR"),
     }),
 });
 

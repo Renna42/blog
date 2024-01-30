@@ -8,6 +8,9 @@ import Datetime from "@components/Datetime";
 import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
 import Comments from "@components/Comments.astro";
+import Hr from "@components/Hr.astro";
+
+const currentYear = new Date().getFullYear();
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -25,6 +28,7 @@ const {
   modDatetime,
   tags,
   comment,
+  license,
 } = post.data;
 
 const { Content } = await post.render();
@@ -77,6 +81,13 @@ const layoutProps = {
     <ul class="my-8">
       {tags.map(tag => <Tag tag={slugifyStr(tag)} />)}
     </ul>
+
+    <Hr />
+    <br>
+
+    <div class="text-center">
+      <span class="text-sm">© {currentYear} {license != "ARR" ? "本文采用 " + license + " 许可证进行许可" : "保留所有权利" }</span>
+    </div>
 
     {comment && <Comments />}
   </main>

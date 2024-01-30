@@ -8,6 +8,7 @@ tags:
   - dns
   - 整活
 description: 使用 DNS 来传播自己的 PGP 证书指纹
+license: CC BY-SA 4.0
 ---
 
 半夜的突然想法，于是我看到了[这篇文章](https://www.gushi.org/make-dns-cert/howto.html)
