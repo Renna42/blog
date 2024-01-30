@@ -4,6 +4,7 @@ import react from "@astrojs/react";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import remarkEmoji from "remark-emoji";
+import rehypeExternalLinks from "rehype-external-links";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
 import compress from "astro-compress";
@@ -41,6 +42,15 @@ export default defineConfig({
         remarkEmoji,
         {
           accessible: true,
+        },
+      ],
+    ],
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        {
+          rel: ["nofollow", "noopener", "noreferer"],
+          target: "_blank",
         },
       ],
     ],
