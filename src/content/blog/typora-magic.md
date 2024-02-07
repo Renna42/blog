@@ -13,6 +13,6 @@ license: CC BY-NC-SA 4.0
 
 理论上全版本通杀, 甚至可以通过这个补丁继续用超旧版
 
-下载链接: https://blog.jvav.me/assets/typora-magic/TyporaNeko,zip
+下载链接: <https://blog.jvav.me/assets/typora-magic/TyporaNeko.zip>
 
-OpenPGP 签名: https://blog.jvav.me/assets/typora-magic/TyporaNeko,zip.sig
+OpenPGP 签名: <https://blog.jvav.me/assets/typora-magic/TyporaNeko.zip.sig>
