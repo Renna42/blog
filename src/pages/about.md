@@ -5,7 +5,7 @@ title: "关于"
 
 想变得可爱的普通人一个, 线上是一只赛博猫猫, 一般被称为 `滑稽`
 
-是一个 MtF 🏳️‍⚧️ (HRT 2023.10.27), 一个 [ADHD](https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder), 会写些奇怪的代码
+是一个 MtF 🏳️‍⚧️ (HRT 2023.10.27), 会写些奇怪的代码
 
 很菜但很爱玩 maimai, 也是个 Minecraft 玩家
 
