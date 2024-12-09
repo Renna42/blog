@@ -13,6 +13,7 @@ import preact from "@astrojs/preact";
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
+  prefetch: true,
   integrations: [
     tailwind({
       applyBaseStyles: false,
