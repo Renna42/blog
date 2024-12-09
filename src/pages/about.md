@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "关于"
 ---
 
-<img src="/assets/avatar.webp" alt="Avatar" class="float-right" style="zoom: 60%">
+<img src="/assets/avatar.webp" alt="Avatar" class="float-right" style="zoom: 50%">
 
 Hi:wave:, 这里是 **泉野咲**
 
