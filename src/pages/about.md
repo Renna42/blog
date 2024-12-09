@@ -3,38 +3,18 @@ layout: ../layouts/AboutLayout.astro
 title: "关于"
 ---
 
-想变得可爱的普通人一个, 线上是一只赛博猫猫, 一般被称为 `滑稽`
+<img src="/avatar.webp" alt="Avatar" class="float-right" style="zoom: 60%">
 
-是一个 MtF 🏳️‍⚧️ (HRT 2023.10.27), 会写些奇怪的代码
+Hi:wave:, 这里是 **泉野咲**
 
-很菜但很爱玩 maimai, 也是个 Minecraft 玩家
+一个 ~~猫娘~~开发者
 
-## OpenPGP
+日常是写 Python 的, 不过其他语言也有涉猎
 
-指纹:
+这个站点是使用 Astro + Tailwind CSS 构建的
 
-```
-EB96A622B551964B3F6E9F7B7DAE108B0C351D44
-```
+主要用 Windows, 但喜欢研究一些 Linux 相关的东西
 
-公钥:
+游戏苦手, 基本上不会打什么游戏
 
-```
------BEGIN PGP PUBLIC KEY BLOCK-----
-
-mDMEZbegcRYJKwYBBAHaRw8BAQdAqsfKFF1/7dG8wf/hJKx32kNOac6AKW7jEH5X
-Mx/CYN+0FU5la29vbyA8bmVrb0BqdmF2Lm1lPoicBBMWCgBEAhsjBQkFpG5PBQsJ
-CAcCAiICBhUKCQgLAgQWAgMBAh4HAheAFiEE65amIrVRlks/bp97fa4Qiww1HUQF
-AmW3omoCGQEACgkQfa4Qiww1HUTVmgEAzSwzFc0TmKamB+by0xNt2lNduEkzuaVA
-wkxgHkfhEOUA/13le/PAO7cwZYTv7gTg0YksuW1IiYD2pOypaloEgLsItB9IdWFq
-aV9NVVIyMzMgPGh1YWppbXVyQGp2YXYubWU+iJkEExYKAEEWIQTrlqYitVGWSz9u
-n3t9rhCLDDUdRAUCZbeiYwIbIwUJBaRuTwULCQgHAgIiAgYVCgkICwIEFgIDAQIe
-BwIXgAAKCRB9rhCLDDUdRIiEAQCTCz7akSN7AdpmPaBQySaAZBypHqeaYI6RebV5
-A5/TLAEAmDztBbnsLbUWum1i/Wbv8THyfwC9qY3tusaTPUJvige4OARlt6BxEgor
-BgEEAZdVAQUBAQdAGs/Bzu7pQP31+Os1PNEB8LNqrrBWLfVMyt6UGDhF0gcDAQgH
-iH4EGBYKACYWIQTrlqYitVGWSz9un3t9rhCLDDUdRAUCZbegcQIbDAUJBaRuTwAK
-CRB9rhCLDDUdRIR8AQDwI9u8ntYxGWt37gMQ44BmKbf/yiRN60iPFmG7JOmVzQD/
-V6s2RAk541LQdjKveQ3geCKhPwap9US5y6Y6c4UJXgs=
-=KuAj
------END PGP PUBLIC KEY BLOCK-----
-```
+希望可以多多社交~
