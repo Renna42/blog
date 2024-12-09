@@ -2,7 +2,7 @@
   <section class="giscus mx-auto mt-10 w-full"></section>
 </div>
 
-<script lang="javascript">
+<script is:inline lang="javascript" async>
   (function () {
     const element = document.createElement("script");
     const config = {
@@ -19,6 +19,7 @@
       // eslint-disable-next-line no-undef
       "data-theme": getGiscusTheme(),
       "data-lang": "zh-CN",
+      "data-loading": "lazy",
       crossorigin: "anonymous",
       async: true,
     };
