@@ -1,7 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "C:/Users/Admin/Desktop/NewBlog/src",
+    "baseUrl": "src",
     "jsx": "react-jsx",
     "paths": {
       "@assets/*": ["assets/*"],
