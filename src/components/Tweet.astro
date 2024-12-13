@@ -1,0 +1,31 @@
+---
+export interface Props {
+	id: string;
+}
+
+const { id } = Astro.props;
+
+async function fetchTweet(id: string) {
+	try {
+		const oembedUrl = new URL('https://publish.twitter.com/oembed');
+		oembedUrl.searchParams.set('url', id);
+		oembedUrl.searchParams.set('dnt', 'true');
+		oembedUrl.searchParams.set('theme', 'dark');
+		return (await fetch(oembedUrl).then((res) => res.json())) as {
+			url: string;
+			author_name: string;
+			author_url: string;
+			html: string;
+		};
+	} catch (e) {
+		console.error(
+			`[error]  embed-tweet
+         ${e.status} - ${e.statusText}: Failed to fetch tweet ${id}`
+		);
+	}
+}
+
+const tweet = await fetchTweet(id);
+---
+
+{tweet && <embed-tweet set:html={tweet.html} />}
