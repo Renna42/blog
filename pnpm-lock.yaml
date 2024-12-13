@@ -72,6 +72,15 @@ importers:
       '@eslint/js':
         specifier: ^9.16.0
         version: 9.16.0
+      '@fontsource/inter':
+        specifier: ^5.1.0
+        version: 5.1.0
+      '@fontsource/noto-sans-sc':
+        specifier: ^5.1.0
+        version: 5.1.0
+      '@fontsource/noto-serif-sc':
+        specifier: ^5.1.0
+        version: 5.1.0
       '@fortawesome/fontawesome-free':
         specifier: ^6.7.1
         version: 6.7.1
@@ -810,6 +819,15 @@ packages:
   '@fastify/busboy@2.1.1':
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
+
+  '@fontsource/inter@5.1.0':
+    resolution: {integrity: sha512-zKZR3kf1G0noIes1frLfOHP5EXVVm0M7sV/l9f/AaYf+M/DId35FO4LkigWjqWYjTJZGgplhdv4cB+ssvCqr5A==}
+
+  '@fontsource/noto-sans-sc@5.1.0':
+    resolution: {integrity: sha512-6Za/beXpkP0nStbyPRJPGRGwvjHwrlP0gbR/73bJKXWyjzsRQA+LF9990R5oPmgm+NmBDb0grad6Q9E7OEzLtw==}
+
+  '@fontsource/noto-serif-sc@5.1.0':
+    resolution: {integrity: sha512-KUqvssRd5UGNk1tYykiKT+7cuXdCjQe865z0tv/oz6RQc4d48DjEvx4uBH6yO3WwN49SsgyV6Ajxd9iBIUnAQg==}
 
   '@fortawesome/fontawesome-free@6.7.1':
     resolution: {integrity: sha512-ALIk/MOh5gYe1TG/ieS5mVUsk7VUIJTJKPMK9rFFqOgfp0Q3d5QiBXbcOMwUvs37fyZVCz46YjOE6IFeOAXCHA==}
@@ -4527,6 +4545,12 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
+  '@fontsource/inter@5.1.0': {}
+
+  '@fontsource/noto-sans-sc@5.1.0': {}
+
+  '@fontsource/noto-serif-sc@5.1.0': {}
+
   '@fortawesome/fontawesome-free@6.7.1': {}
 
   '@humanfs/core@0.19.1': {}
@@ -6880,6 +6904,9 @@ snapshots:
       '@astrojs/mdx': 4.0.2(astro@5.0.4(@types/node@22.10.1)(jiti@2.4.1)(lightningcss@1.28.2)(rollup@4.28.1)(terser@5.37.0)(typescript@5.7.2)(yaml@2.6.1))
       '@astrojs/preact': 4.0.0(@babel/core@7.26.0)(@types/node@22.10.1)(jiti@2.4.1)(lightningcss@1.28.2)(preact@10.25.1)(terser@5.37.0)(yaml@2.6.1)
       '@astrojs/rss': 4.0.10
+      '@fontsource/inter': 5.1.0
+      '@fontsource/noto-sans-sc': 5.1.0
+      '@fontsource/noto-serif-sc': 5.1.0
       astro: 5.0.4(@types/node@22.10.1)(jiti@2.4.1)(lightningcss@1.28.2)(rollup@4.28.1)(terser@5.37.0)(typescript@5.7.2)(yaml@2.6.1)
       astro-embed: 0.9.0(astro@5.0.4(@types/node@22.10.1)(jiti@2.4.1)(lightningcss@1.28.2)(rollup@4.28.1)(terser@5.37.0)(typescript@5.7.2)(yaml@2.6.1))
       astro-seo: 0.8.4(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.2)

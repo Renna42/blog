@@ -72,15 +72,16 @@ const layoutProps = {
     <Hr />
     <br />
 
-    <div class="text-center">
-      <span class="text-sm"
-        >&copy; {currentYear}
-        {
-          license != "ARR"
-            ? "本文采用 " + license + " 许可证进行许可"
-            : "保留所有权利"
-        }</span
-      >
+    <div class="text-center text-sm font-serif">
+      &copy; {
+        pubDatetime.getFullYear() == currentYear
+          ? currentYear
+          : pubDatetime.getFullYear() + "-" + currentYear
+      } 泉野咲 {
+        license != "ARR"
+          ? "本文采用 " + license + " 许可证进行许可"
+          : "保留所有权利"
+      }
     </div>
   </main>
   <Footer />

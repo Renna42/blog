@@ -21,18 +21,17 @@ import json
 
 import requests
 
-
 class PixivHTMLParser(HTMLParser):
     def __init__(self, *, convert_charrefs=True):
         super().__init__(convert_charrefs=convert_charrefs)
         self.pixiv_init_config = None
 
     def handle_starttag(self, tag, attrs):
+        # 查找 id 为 init-config 的元素
         if ("id", "init-config") in attrs:
             for k, v in attrs:
                 if k == "value":
                     self.pixiv_init_config = json.loads(v)
-
 
 parser = PixivHTMLParser()
 
