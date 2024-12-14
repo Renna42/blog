@@ -34,6 +34,29 @@ export const SOCIALS: SocialObject[] = [
 
 export const FRIENDS: FriendObject[] = [
   {
+    name: "白雲",
+    description: "no code no life",
+    icon_file: "whitecloud.png",
+    socials: [
+      {
+        icon: "fa-brands fa-twitter",
+        href: "https://twitter.com/philly030",
+        linkTitle: "Twitter"
+      },
+      {
+        icon: "fa-brands fa-bluesky",
+        href: "https://bsky.app/profile/whitecloud.life",
+        linkTitle: "Bluesky"
+      },
+      {
+        icon: "fa-brands fa-github",
+        href: "https://github.com/phillychi3",
+        linkTitle: "Github"
+      }
+    ],
+    link: "https://bento.me/whitecloud",
+  },
+  {
     name: "Empty SEKAI",
     description: "一只游荡在无人 SEKAI 的小白葱",
     icon_file: "prprnya.jpg",
@@ -41,7 +64,7 @@ export const FRIENDS: FriendObject[] = [
       {
         icon: "fa-brands fa-github",
         href: "https://github.com/prprnya",
-        linkTitle: "GitHub",
+        linkTitle: "Github",
       },
       {
         href: "https://nightcord.de/@miku",
