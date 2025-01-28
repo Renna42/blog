@@ -34,6 +34,19 @@ export const SOCIALS: SocialObject[] = [
 
 export const FRIENDS: FriendObject[] = [
   {
+    name: "雨山秋",
+    description: "僕を連れてって浸み込んでしまう前に",
+    icon_file: "aki.jpg",
+    socials: [
+      {
+        icon: "fa-brands fa-twitter",
+        href: "https://twitter.com/Ameyama_aki",
+        linkTitle: "Twitter"
+      }
+    ],
+    link: "https://aki.cat",
+  },
+  {
     name: "雨落",
     description: "二分之一少女，乘着比特流环游世界~",
     icon_file: "qyl.png",
