@@ -34,6 +34,12 @@ export const SOCIALS: SocialObject[] = [
 
 export const FRIENDS: FriendObject[] = [
   {
+    name: "MBRjun-Blog",
+    description: "我们生活在大地上，但我们的梦想超越天空",
+    icon_file: "mbr.jpg",
+    link: "https://www.mbrjun.cn/",
+  },
+  {
     name: "白雲",
     description: "no code no life",
     icon_file: "whitecloud.png",
