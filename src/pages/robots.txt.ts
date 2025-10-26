@@ -2,12 +2,6 @@ import type { APIRoute } from "astro";
 import { SITE } from "@config";
 
 const robots = `
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
-User-agent: GPTBot
-Disallow: /
-
 User-agent: *
 Allow: /
 
