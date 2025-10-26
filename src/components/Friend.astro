@@ -1,0 +1,15 @@
+---
+import type { FriendObject } from "types";
+
+export interface Props {
+  friend: FriendObject;
+}
+
+const { friend } = Astro.props;
+---
+<div>
+  <h2><a href={friend.link}>{friend.name}</a></h2>
+  <p>
+    {friend.description}
+  </p>
+</div>

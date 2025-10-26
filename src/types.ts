@@ -17,8 +17,5 @@ export type SocialObject = {
 export type FriendObject = {
   name: string;
   description: string;
-  icon_file: string;
-  socials?: SocialObject[];
   link: string;
-  active?: boolean;
 };

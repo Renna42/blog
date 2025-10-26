@@ -4,7 +4,7 @@ import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Layout from "@layouts/Layout.astro";
-import FriendCard from "@components/FriendCard.astro";
+import Friend from "@components/Friend.astro";
 ---
 
 <Layout title={`友情链接 - ${SITE.title}`}>
@@ -13,13 +13,9 @@ import FriendCard from "@components/FriendCard.astro";
   <main id="main-content">
     <section id="about" class="prose mb-28 max-w-3xl prose-img:border-0">
       <h1 class="text-2xl tracking-wider sm:text-3xl">友情链接</h1>
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {
-          FRIENDS.filter(
-            friend => friend.active == undefined || friend.active
-          ).map(friend => <FriendCard friend={friend} />)
-        }
-      </div>
+      {
+        FRIENDS.map(friend => <Friend friend={friend} />)
+      }
     </section>
   </main>
   <Footer />

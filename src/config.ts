@@ -28,83 +28,34 @@ export const SOCIALS: SocialObject[] = [
 ];
 
 export const FRIENDS: FriendObject[] = [
+  // {
+  //   name: "/mnt/anyneko",
+  //   description: "",
+  //   link: "https://aneko.moe"
+  // },
   {
     name: "雨山秋",
     description: "僕を連れてって浸み込んでしまう前に",
-    icon_file: "aki.jpg",
-    socials: [
-      {
-        icon: "fa-brands fa-twitter",
-        href: "https://twitter.com/Ameyama_aki",
-        linkTitle: "Twitter"
-      }
-    ],
     link: "https://aki.cat",
   },
   {
-    name: "雨落",
+    name: "一叶知秋",
     description: "二分之一少女，乘着比特流环游世界~",
-    icon_file: "qyl.png",
-    socials: [
-      {
-        icon: "fa-brands fa-github",
-        href: "https://github.com/qyl27",
-        linkTitle: "Github",
-      },
-    ],
     link: "https://blog.rain.cx",
   },
   {
-    name: "Rikka",
+    name: "Rikkaの小小窝",
     description: "早上好哦(つω`*)～☆",
-    icon_file: "rikka.webp",
     link: " https://rikka.im",
   },
   {
-    name: "MBRjun",
+    name: "MBRjun-Blog",
     description: "我们生活在大地上，但我们的梦想超越天空",
-    icon_file: "mbr.jpg",
     link: "https://www.mbrjun.cn/",
-  },
-  {
-    name: "白雲",
-    description: "no code no life",
-    icon_file: "whitecloud.png",
-    socials: [
-      {
-        icon: "fa-brands fa-twitter",
-        href: "https://twitter.com/philly030",
-        linkTitle: "Twitter"
-      },
-      {
-        icon: "fa-brands fa-bluesky",
-        href: "https://bsky.app/profile/whitecloud.life",
-        linkTitle: "Bluesky"
-      },
-      {
-        icon: "fa-brands fa-github",
-        href: "https://github.com/phillychi3",
-        linkTitle: "Github"
-      }
-    ],
-    link: "https://bento.me/whitecloud",
   },
   {
     name: "Empty SEKAI",
     description: "一只游荡在无人 SEKAI 的小白葱",
-    icon_file: "prprnya.jpg",
-    socials: [
-      {
-        icon: "fa-brands fa-github",
-        href: "https://github.com/prprnya",
-        linkTitle: "Github",
-      },
-      {
-        href: "https://nightcord.de/@miku",
-        linkTitle: "Mastodon",
-        icon: "fa-brands fa-mastodon",
-      },
-    ],
     link: "https://prpr.rip",
   },
 ];
