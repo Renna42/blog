@@ -15,6 +15,17 @@ const { activeNav } = Astro.props;
   <div class="nav-container">
     <div class="top-nav-wrap">
       <a href="/" class="logo whitespace-nowrap font-mono">{SITE.title}</a>
+      <a
+        target="_blank"
+        href="/rss.xml"
+        class="rss-link"
+        aria-label="rss feed"
+        title="RSS 订阅"
+      >
+        <i class="fa-solid fa-rss rss-icon relative left-1 text-skin-accent"
+        ></i>
+        <span class="sr-only">RSS 订阅</span>
+      </a>
       <nav id="nav-menu">
         <button
           class="hamburger-menu focus-outline"
@@ -73,17 +84,6 @@ const { activeNav } = Astro.props;
             >
               <i class="fa-solid fa-magnifying-glass"></i>
               <span class="sr-only">搜索</span>
-            </LinkButton>
-          </li>
-          <li>
-            <LinkButton
-              href="/rss.xml"
-              className={`focus-outline p-3 sm:p-1 flex`}
-              ariaLabel="rss"
-              title="RSS"
-            >
-              <i class="fa-solid fa-rss"></i>
-              <span class="sr-only">RSS</span>
             </LinkButton>
           </li>
           <li>
