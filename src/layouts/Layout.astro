@@ -82,10 +82,6 @@ const {
 
       let themeValue = getPreferTheme();
 
-      function getGiscusTheme() {
-        return themeValue === "dark" ? "dark_dimmed" : "light";
-      }
-
       function setPreference() {
         localStorage.setItem("theme", themeValue);
         reflectPreference();
@@ -111,19 +107,6 @@ const {
           document
             .querySelector("meta[name='theme-color']")
             ?.setAttribute("content", bgColor);
-
-          document.querySelectorAll("iframe.giscus-frame")?.forEach(frame => {
-            frame.contentWindow.postMessage(
-              {
-                giscus: {
-                  setConfig: {
-                    theme: getGiscusTheme(),
-                  },
-                },
-              },
-              "https://giscus.app"
-            );
-          });
         }
       }
 
