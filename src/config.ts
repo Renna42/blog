@@ -28,11 +28,11 @@ export const SOCIALS: SocialObject[] = [
 ];
 
 export const FRIENDS: FriendObject[] = [
-  // {
-  //   name: "/mnt/anyneko",
-  //   description: "",
-  //   link: "https://aneko.moe"
-  // },
+  {
+    name: "/mnt/anyneko",
+    description: "待到重逢之时，我们一定要无话不谈",
+    link: "https://aneko.moe"
+  },
   {
     name: "雨山秋",
     description: "僕を連れてって浸み込んでしまう前に",
