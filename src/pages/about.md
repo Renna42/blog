@@ -7,6 +7,8 @@ title: "关于"
 
 <img src="/assets/avatar.jpg" alt="Avatar" class="float-right rounded-full w-[400px]" style="zoom: 50%">
 
+<!-- https://www.pixiv.net/artworks/112850569 -->
+
 这里是 Renna (a.k.a. 泉野咲)，不过你也可以用其他你认为习惯的称呼
 
 会写一些小软件，但大部分时候都停留在了想法
