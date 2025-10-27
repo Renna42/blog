@@ -21,7 +21,7 @@ export const SOCIALS: SocialObject[] = [
   },
   {
     icon: "fa-regular fa-envelope",
-    href: "mailto:saki@izumino.cat",
+    href: "mailto:to@renna.dev",
     linkTitle: "E-Mail",
   },
 ];
