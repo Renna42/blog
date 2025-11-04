@@ -21,7 +21,7 @@ export const SOCIALS: SocialObject[] = [
   },
   {
     icon: "fa-regular fa-envelope",
-    href: "mailto:saki@izumino.cat",
+    href: "mailto:is@renna.dev",
     linkTitle: "E-Mail",
   },
 ];
@@ -38,11 +38,6 @@ export const FRIENDS: FriendObject[] = [
     link: "https://aki.cat",
   },
   {
-    name: "一叶知秋",
-    description: "二分之一少女，乘着比特流环游世界~",
-    link: "https://blog.rain.cx",
-  },
-  {
     name: "Rikkaの小小窝",
     description: "早上好哦(つω`*)～☆",
     link: " https://rikka.im",
@@ -51,11 +46,6 @@ export const FRIENDS: FriendObject[] = [
     name: "MBRjun-Blog",
     description: "我们生活在大地上，但我们的梦想超越天空",
     link: "https://www.mbrjun.cn/",
-  },
-  {
-    name: "Empty SEKAI",
-    description: "一只游荡在无人 SEKAI 的小白葱",
-    link: "https://prpr.rip",
   },
 ];
 
