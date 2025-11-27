@@ -10,6 +10,8 @@ import mdx from "@astrojs/mdx";
 
 import preact from "@astrojs/preact";
 
+import vercel from "@astrojs/vercel";
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
@@ -53,4 +55,7 @@ export default defineConfig({
     },
   },
   scopedStyleStrategy: "where",
+  adapter: vercel({
+    imageService: true,
+  }),
 });
